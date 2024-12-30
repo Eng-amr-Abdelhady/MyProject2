@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدماتي</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+</head>
+<body>
+
+    <div class="loading-spinner" id="loading-spinner"></div>
+        <!-- شريط التنقل -->
+        <div id="notification-bar" class="notification-bar">
+            <p>خصم 10% على جميع الخدمات! استخدم الكود: Eng-amr</p>
+            <button onclick="closeNotification()">×</button>
+        </div>
+
+
+<header>
+    <nav class="navbar">
+        <div class="logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li>             <a href="login.html">تسجيل الدخول</a>
+            </li>
+            <li><a href="#services">الخدمات</a></li>
+            <li><a href="#contact">تواصل معنا</a></li>
+        </ul>
+        <button id="toggle-menu" class="menu-btn">☰</button>
+    </nav>
+</header>
+        <!-- القسم الرئيسي -->
+<section class="hero">
+        <h1>أكبر منصة للخدمات المصغرة</h1>
+        <p>ابحث عن الخدمة التي تناسب احتياجاتك الآن!</p>
+        <button>اشترك الآن</button>
+</section>
+
+<!-- قسم الخدمات -->
+<section id="services" class="services">
+    <div class="search-filter">
+        <input type="text" id="service-search" onkeyup="filterServices()" placeholder="ابحث عن خدمه">
+    </div>
+<section id="services">
+        <div class="service">خدمة تصميم المواقع</div>
+        <div class="service">خدمة تحسين محركات البحث</div>
+        <div class="service">خدمة التسويق الرقمي</div>
+</section>
+    <h2>الخدمات</h2>
+    <div class="service">
+        <img src="pexels-zaksheuskaya-709412-1616403.jpg" alt="خدمة تصميم المواقع">
+        <h3>تصميم المواقع</h3>
+        <p>نقدم تصميم مواقع جذابة ومناسبة لكل الأعمال.</p>
+        <button>اطلب الخدمة</button>
+    </div>
+    <div class="service">
+        <img src="pexels-danny-meneses-340146-943096.jpg" alt="خدمة تحسين محركات البحث">
+        <h3>تحسين محركات البحث</h3>
+        <p>نساعدك في تصدر نتائج البحث لزيادة ظهور موقعك.</p>
+        <button>اطلب الخدمة</button>
+    </div>
+    <div class="service">
+        <img src="pexels-danny-meneses-340146-943096.jpg" alt="خدمة تحسين محركات البحث">
+        <h3>تحسين محركات البحث</h3>
+        <p>نساعدك في تصدر نتائج البحث لزيادة ظهور موقعك.</p>
+        <button>اطلب الخدمة</button>
+    </div>
+    <div class="service">
+        <img src="designecologist-1779487 (1).jpg" alt="خدمة التسويق الرقمي">
+        <h3>التسويق الرقمي</h3>
+        <p>خطط تسويقية مبتكرة لتعزيز حضورك على الإنترنت.</p>
+        <button>اطلب الخدمة</button>
+    </div>
+
+    <div class="service">
+        <img src="807aa3d7fdff41572b42e85ac41bc328.jpg" alt="خدمة التسويق الرقمي">
+        <h3>التسويق الرقمي</h3>
+        <p>خطط تسويقية مبتكرة لتعزيز حضورك على الإنترنت.</p>
+        <button>اطلب الخدمة</button>
+    </div>
+</section>
+
+<!-- نافذة منبثقة -->
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <h2>شكرًا للاشتراك!</h2>
+        <p>تم اشتراكك بنجاح.</p>
+    </div>
+</div>
+<!-- قسم التقييمات -->
+<section class="testimonials">
+    <h2>آراء عملائنا</h2>
+    <div class="testimonial-item">
+        <p>"خدمة رائعة! كنت سعيدًا جدًا بالتعامل معكم."</p>
+        <h4>- أحمد محمد</h4>
+    </div>
+    <div class="testimonial-item">
+        <p>"الاحترافية كانت واضحة في كل التفاصيل. سأكرر التعامل معكم."</p>
+        <h4>- سارة علي</h4>
+    </div>
+    <div class="testimonial-item">
+        <p>"أنصح الجميع بالتعامل مع هذا الفريق الرائع."</p>
+        <h4>- مصطفى حسين</h4>
+    </div>
+</section>
+<!-- قسم التواصل معنا -->
+<section class="contact">
+    <h2>تواصل معنا</h2>
+    <form action="#" method="POST">
+        <input type="text" placeholder="اسمك" required>
+        <input type="email" placeholder="بريدك الإلكتروني" required>
+        <textarea placeholder="اكتب رسالتك هنا" required></textarea>
+        <button type="submit">إرسال</button>
+    </form>
+</section>
+<section id="about" class="about" data-aos="zoom-in">
+    <h2>من نحن</h2>
+    <p>نحن فريق متخصص في تقديم الحلول البرمجية المتكاملة...</p>
+</section>
+
+
+<section id="faq" class="faq">
+    <h2>الأسئلة الشائعة</h2>
+    <div class="question">
+        <h3>ما هي الخدمات التي تقدمونها؟</h3>
+        <p>نقدم خدمات تصميم المواقع، تطوير البرمجيات، وتحسين محركات البحث.</p>
+    </div>
+    <div class="question">
+        <h3>كيف يمكنني التواصل معكم؟</h3>
+        <p>يمكنك استخدام نموذج "تواصل معنا" على الصفحة أو مراسلتنا عبر البريد الإلكتروني.</p>
+    </div>
+</section>
+    <button id="scroll-to-top">⬆</button>
+
+<footer>
+    <section class="newsletter">
+        <h3>اشترك في نشرتنا الإخبارية</h3>
+        <form id="newsletter-form">
+            <input type="email" id="email" placeholder="أدخل بريدك الإلكتروني" required>
+            <button type="submit">اشترك الآن</button>
+        </form>
+    </section>
+</footer>
+
+<footer class="footer">
+    <p>© 2024 جميع الحقوق محفوظة. تصميم وتطوير بواسطة عمرو.</p>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="main.js"></script>
+</body>
+</html>
+
+الحمدلله
+
+
+
+
+
